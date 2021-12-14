@@ -1,0 +1,16 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CoursesService {
+
+  constructor(private httpClient: HttpClient) { }
+
+  list(){
+    return [
+    {_id:"1", nome:'Angular', category: 'front-end'}
+  ];
+  }
+}
